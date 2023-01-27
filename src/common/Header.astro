@@ -1,121 +1,125 @@
 ---
-import Moon from '../components/Moon.astro'
-import Sun from '../components/Sun.astro'
-import System from '../components/System.astro'
+import Moon from '@components/Moon.astro'
+import Sun from '@components/Sun.astro'
+import System from '@components/System.astro'
 import Logo from './Logo.astro'
 
 const { pathname } = Astro.url
 
-const ROUTES = [
-  ['Inicio', '/'],
-  ['Flora', '/'],
-  ['Fauna', '/'],
-  ['Destinos', '/']
+const NAVIGATION_LINKS = [
+	{ title: 'Inicio', href: '/' },
+	{ title: 'Flora', href: '/' },
+	{ title: 'Fauna', href: '/' },
+	{ title: 'Lugares', href: '/' }
 ]
 
-const links = pathname === '/' ? ROUTES.slice(1) : ROUTES
+const links = pathname === '/' ? NAVIGATION_LINKS.slice(1) : NAVIGATION_LINKS
 ---
 
 <script type="module" is:inline>
-import { toggleMenu } from "/src/utils/toggleMenu"
+	import { toggleMenu } from '../../../../../../../src/utils/toggleMenu'
 
-const iconColorScheme = document.querySelector('#color-scheme')
+	const iconColorScheme = document.querySelector('#color-scheme')
 
-const colorMenu = document.querySelector("#menu-color-scheme")
+	const colorMenu = document.querySelector('#menu-color-scheme')
 
-document.addEventListener('DOMContentLoaded', () => {
-  const colorScheme = window.localStorage['theme-color']
+	document.addEventListener('DOMContentLoaded', () => {
+		const colorScheme = window.localStorage['theme-color']
 
-  iconColorScheme.addEventListener('click', () =>      toggleMenu("#menu-color-scheme"))
+		iconColorScheme.addEventListener('click', () => toggleMenu('#menu-color-scheme'))
 
-  if(colorScheme === "system") return
+		if (colorScheme === 'system') return
 
-  if (
-    colorScheme === 'dark' ||
-    (!('theme-color' in window.localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
-  ) {
-    iconColorScheme.setAttribute('aria-label', 'Modo oscuro')
-    iconColorScheme.firstElementChild.classList.add('hidden')
-    iconColorScheme.lastElementChild.classList.remove('hidden')
-  } else {
-    iconColorScheme.setAttribute('aria-label', 'Modo claro')
-    iconColorScheme.lastElementChild.classList.add('hidden')
-    iconColorScheme.firstElementChild.classList.remove('hidden')
-  }
-})
+		if (
+			colorScheme === 'dark' ||
+			(!('theme-color' in window.localStorage) &&
+				window.matchMedia('(prefers-color-scheme: dark)').matches)
+		) {
+			iconColorScheme.setAttribute('aria-label', 'Modo oscuro')
+			iconColorScheme.firstElementChild.classList.add('hidden')
+			iconColorScheme.lastElementChild.classList.remove('hidden')
+		} else {
+			iconColorScheme.setAttribute('aria-label', 'Modo claro')
+			iconColorScheme.lastElementChild.classList.add('hidden')
+			iconColorScheme.firstElementChild.classList.remove('hidden')
+		}
+	})
 
-colorMenu.querySelectorAll("li").forEach(itemMenu => itemMenu.addEventListener("click", (ev) => {
-  const {scheme} = ev.target.dataset
+	colorMenu.querySelectorAll('li').forEach((itemMenu) =>
+		itemMenu.addEventListener('click', (ev) => {
+			const { scheme } = ev.target.dataset
 
-  toggleMenu("#menu-color-scheme")
+			toggleMenu('#menu-color-scheme')
 
-  window.localStorage.setItem("theme-color", scheme)
-}))
+			window.localStorage.setItem('theme-color', scheme)
+		})
+	)
 
-document.addEventListener('click', (ev) => {
-  if(!ev.target.closest("#color-scheme") && !colorMenu.classList.contains("hidden")) toggleMenu("#menu-color-scheme")
-})
+	document.addEventListener('click', (ev) => {
+		if (!ev.target.closest('#color-scheme') && !colorMenu.classList.contains('hidden')) {
+			toggleMenu('#menu-color-scheme')
+		}
+	})
 </script>
 
 <a
-  href='#'
-  class='block absolute top-0 left-0 w-full py-4 bg-red-400 text-center text-2xl font-bold opacity-0 -z-10 transition-opacity ease-linear duration-200 md:text-4xl focus:opacity-100 focus:z-50'
-  >Ir al contenido principal</a
+	href="#"
+	class="block absolute top-0 left-0 w-full py-4 bg-red-400 text-center text-2xl font-bold opacity-0 -z-10 transition-opacity ease-linear duration-200 md:text-4xl focus:opacity-100 focus:z-50"
+	>Ir al contenido principal</a
 >
 
 <header
-  class='flex items-center justify-between w-full bg-[#202020] px-6 py-2.5 lg:px-10 text-white'
+	class="flex items-center justify-between w-full bg-[#202020] px-6 py-2.5 lg:px-10 text-white"
 >
-  <div class='flex items-center justify-center gap-x-4'>
-    <a href='/'>
-      <Logo styles='h-auto w-9' />
-    </a>
-    <span class='hidden lg:block'>Nombre de página</span>
-  </div>
-  <div class='flex items-center gap-x-8'>
-    <div class='relative h-6 w-6'>
-      <button id='color-scheme' class='relative align-middle'>
-        <Sun classes='hidden' />
-        <Moon />
-      </button>
-      <ul
-        id='menu-color-scheme'
-        class='absolute top-14 left-0 bg-[#333] py-1.5 rounded-md hidden overflow-hidden'
-      >
-        <li
-          class='flex items-center p-2 w-40 text-base cursor-pointer hover:bg-[#2a2a2a]'
-          data-scheme='light'
-        >
-          <Sun classes='mr-4' />
-          Claro
-        </li>
-        <li
-          class='flex items-center p-2 w-40 text-base cursor-pointer hover:bg-[#2a2a2a]'
-          data-scheme='dark'
-        >
-          <Moon classes='mr-4' />
-          Oscuro
-        </li>
-        <li
-          class='flex items-center p-2 w-40 text-base cursor-pointer hover:bg-[#2a2a2a]'
-          data-scheme='sysstem'
-        >
-          <System classes='mr-4' />
-          Sistema
-        </li>
-      </ul>
-    </div>
-    <nav>
-      <ul class='flex gap-x-4'>
-        {
-          links.map(([name, href]) => (
-            <li>
-              <a href={href}>{name}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
-  </div>
+	<div class="flex items-center justify-center gap-x-4">
+		<a href="/">
+			<Logo styles="h-auto w-9" />
+		</a>
+		<span class="hidden lg:block">Nombre de página</span>
+	</div>
+	<div class="flex items-center gap-x-8">
+		<div class="relative h-6 w-6">
+			<button id="color-scheme" class="relative align-middle">
+				<Sun classes="hidden" />
+				<Moon />
+			</button>
+			<ul
+				id="menu-color-scheme"
+				class="absolute top-14 left-0 bg-[#333] py-1.5 rounded-md hidden overflow-hidden"
+			>
+				<li
+					class="flex items-center p-2 w-40 text-base cursor-pointer hover:bg-[#2a2a2a]"
+					data-scheme="light"
+				>
+					<Sun classes="mr-4" />
+					Claro
+				</li>
+				<li
+					class="flex items-center p-2 w-40 text-base cursor-pointer hover:bg-[#2a2a2a]"
+					data-scheme="dark"
+				>
+					<Moon classes="mr-4" />
+					Oscuro
+				</li>
+				<li
+					class="flex items-center p-2 w-40 text-base cursor-pointer hover:bg-[#2a2a2a]"
+					data-scheme="sysstem"
+				>
+					<System classes="mr-4" />
+					Sistema
+				</li>
+			</ul>
+		</div>
+		<nav>
+			<ul class="flex gap-x-4">
+				{
+					links.map(({ title, href }) => (
+						<li>
+							<a href={href}>{title}</a>
+						</li>
+					))
+				}
+			</ul>
+		</nav>
+	</div>
 </header>
