@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['standard', 'plugin:astro/recommended'],
+	extends: ['standard', 'plugin:astro/recommended', 'plugin:@typescript-eslint/recommended'],
 	rules: {
 		'no-tabs': 'off',
 		indent: 'off',
