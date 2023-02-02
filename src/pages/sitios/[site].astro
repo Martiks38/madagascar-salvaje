@@ -1,0 +1,47 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Information from '@layouts/Information.astro'
+import { generateSuggestions } from '@utils/generateSuggestion'
+import { toCapitalize } from '@utils/toCapitalize'
+import * as data from '@assets/db/dataDB.json'
+import type { ISite } from '@typings/Sites'
+import type { ISuggestionOption } from '@typings/SuggestionOption'
+
+export function getStaticPaths() {
+	const routes = data.flora.map((plant) => {
+		const normalizeRoute = plant.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+		return { params: { plant: normalizeRoute } }
+	})
+
+	return routes
+}
+
+const { site } = Astro.params
+const title = toCapitalize(site as string) + ' | Madagascar Salvaje'
+
+const infoOption = data.fauna.find(
+	(info) => info.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '') === site
+) as ISite | undefined
+
+const suggestions: ISuggestionOption[] = generateSuggestions({
+	section: 'sitios',
+	path: '/sitios',
+	exclude: site as string
+})
+---
+
+<Layout title={title}>
+	<main class="max-w-screen-xl mx-auto pb-20 px-6">
+		{
+			infoOption && (
+				<Information info={infoOption} suggestions={suggestions}>
+					<h2 class="font-semibold">Curiosidad</h2>
+					{infoOption?.interestingFact
+						? infoOption.interestingFact?.map((paragraph) => <p>{paragraph}</p>)
+						: null}
+				</Information>
+			)
+		}
+	</main>
+</Layout>
