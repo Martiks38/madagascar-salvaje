@@ -5,7 +5,7 @@ const title = 'Madagascar Salvaje'
 ---
 
 <Layout title={title}>
-	<main class="max-w-screen-xl mx-auto pb-20 px-6">
+	<main class="max-w-screen-xl mx-auto pb-10 md:pb-20 xl:px-6">
 		<div class="relative h-[80vh] w-full mb-20 bg-hero-night bg-no-repeat bg-cover bg-center">
 			<h1
 				class="absolute text-5xl bottom-40 left-24 text-white uppercase title-responsive textShadow"
@@ -13,40 +13,42 @@ const title = 'Madagascar Salvaje'
 				{title}
 			</h1>
 		</div>
-		<section class="flex justify-center gap-20 px-10 py-6 mb-20">
-			<div class="max-w-[38ch] text-xl">
+		<section
+			class="flex flex-col justify-center items-center gap-20 px-10 py-6 mb-20 lg:items-start lg:flex-row"
+		>
+			<div class="max-w-[55ch] text-xl lg:max-w-[38ch]">
 				<p class="mb-3.5">
-					La gran isla de Madagascar es una de la más antiguas, apartada de África hace
-					150&nbsp;millones de años y del subcontinente indio hace 88&nbsp;millones de años. Este
-					aislamiento favoreció la conservación de multitud de especies únicas en el mundo siendo la
-					más conocida los lémures y evolución de manera independiente a sus ancestros.
+					Madagascar es una de las islas más antiguas, separada de África hace 150&nbsp;millones de
+					años y del subcontinente indio hace 88&nbsp;millones de años. Este aislamiento ha
+					beneficiado la conservación y evolución de muchas de las especies únicas del mundo,
+					especialmente los lémures, independientemente de sus antepasados.
 				</p>
 				<p>
-					Más del 80 por ciento de las plantas y animales son endémicas de Madagascar, con lo que no
-					se pueden encontrar en ningún otro lugar del mundo. Además, cuenta con exuberantes selvas
-					tropicales, desiertos secos y llanuras cubiertas de hierba cubren la isla, con arrecifes
-					de coral y boques de manglares que se extienden a lo largo de sus costas.
+					Más del 80% de las plantas y animales son endémicos de Madagascar, lo que significa que no
+					se pueden encontrar en ningún otro lugar del mundo. Además, la isla tiene selvas
+					tropicales exuberantes, desiertos áridos y llanuras cubiertas de hierba, mientras que la
+					costa está bordeada de arrecifes de coral y manglares.
 				</p>
 			</div>
-			<div class="w-[480px]">
+			<div class="w-full md:w-[480px]">
 				<img src="/images/intro.webp" alt="" class="object-cover object-center" />
 			</div>
 		</section>
-		<section>
+		<section class="px-10 py-6">
 			<h2 class="mb-8 text-2xl text-center uppercase">
 				Descubre los extraños animales y plantas de Madagascar
 			</h2>
-			<p class="max-w-[85ch] mx-auto px-10 pb-6 text-xl">
-				Esta maravillosa isla cuenta con una gran variedad de plantas tales como, el jazmín de
-				Madagascar, el baobab de los enamorados o el Ravinala o árbol del viajero, y de animales,
-				siendo los más emblemáticos los lémures y otros tan raros y extraños como el Aye-aye.
-				Además, de espectaculares paisajes como el bosque de piedra de Tsingy, la Avenida de los
-				Baobabs o las increíbles playas de Nosy Boraha.
+			<p class="max-w-[55ch] lg:max-w-[85ch] mx-auto pb-6 text-xl">
+				Esta maravillosa isla cuenta con una variedad de flora, como el jazmín de Madagascar, el
+				baobab o el Ravinala, o árbol del viajero, así como animales, siendo los más representativos
+				los lémures y otros animales tan raros y extraños como el Aye. - Sí. Además, paisajes
+				espectaculares como el Bosque de Piedras Tsingy, el Bulevar Baobab o la increíble playa de
+				Nosy Boraha.
 			</p>
 			<nav class="flex flex-wrap gap-y-8 mt-12">
 				<a
 					href="/fauna"
-					class="group relative block basis-1/2 grow h-96 section-left oveflow-hidden after:block after:absolute after:top-0 after:right-0 after:w-2/5 after:h-full after:bg-gradient-to-l after:from-black after:to-transparent"
+					class="group relative block lg:basis-1/2 grow h-96 section-left oveflow-hidden lg:after:absolute lg:after:top-0 lg:after:right-0 lg:after:w-2/5 lg:after:h-full lg:after:bg-gradient-to-l lg:after:from-black lg:after:to-transparent"
 				>
 					<img
 						src="/images/fauna.jpg"
@@ -58,7 +60,7 @@ const title = 'Madagascar Salvaje'
 				</a>
 				<a
 					href="/flora"
-					class="group relative block basis-1/2 grow h-96 section-right overflow-hidden after:block after:absolute after:top-0 after:left-0 after:w-2/5 after:h-full after:bg-gradient-to-r after:from-black after:to-transparent bg-black"
+					class="group relative block lg:basis-1/2 grow h-96 section-right overflow-hidden lg:after:absolute lg:after:top-0 lg:after:left-0 lg:after:w-2/5 lg:after:h-full lg:after:bg-gradient-to-r lg:after:from-black lg:after:to-transparent bg-black"
 				>
 					<img
 						src="/images/flora.jpg"
@@ -66,7 +68,11 @@ const title = 'Madagascar Salvaje'
 						class="w-full h-full object-cover lg:group-hover:scale-150 transition-[transform_400ms_linear]"
 						loading="lazy"
 					/>
-					<h3 class="absolute bottom-0 right-6 mb-4 text-3xl font-bold textShadow">Flora</h3>
+					<h3
+						class="absolute bottom-0 left-6 lg:left-0 lg:right-6 mb-4 text-3xl font-bold textShadow"
+					>
+						Flora
+					</h3>
 				</a>
 				<a href="/sites" class="group relative block grow h-96 overflow-hidden">
 					<img
@@ -89,14 +95,18 @@ const title = 'Madagascar Salvaje'
 		font-size: 1.2rem;
 		font-size: clamp(1.25rem, 0.6565rem + 3.0435vw, 3rem);
 	}
-	.section-left {
-		clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
-	}
-	.section-right {
-		clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
-	}
+
 	.textShadow {
 		text-shadow: 2px 2px 4px #000, 2px -2px 4px #000, -2px -2px 4px #000, -2px 2px 4px #000;
+	}
+
+	@media (min-width: 1024px) {
+		.section-left {
+			clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+		}
+		.section-right {
+			clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+		}
 	}
 
 	@media (max-width: 48rem) {
