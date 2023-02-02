@@ -3,9 +3,14 @@
   "exclude": ["node_modules/"],
   "compilerOptions": {
     "baseUrl": ".",
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": false,
     "paths": {
+      "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
-      "@utils/*": ["src/utils/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@utils/*": ["src/utils/*"],
+      "@typings/*": ["src/typings/*"]
     }
   }
 }
