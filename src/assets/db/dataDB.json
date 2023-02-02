@@ -1,0 +1,167 @@
+{
+  "fauna": [
+    {
+      "imgs": [
+        "https://static.nationalgeographic.es/files/styles/image_3200/public/2320.600x450.jpg?w=710&h=533",
+        "https://www.renovablesverdes.com/wp-content/uploads/2020/05/aye-aye.jpg",
+        "https://allyouneedisbiology.files.wordpress.com/2017/02/aye-aye.jpg?w=1038&h=576&crop=1",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3xsfdrml3-ZUzR3if8hj5DqTJTw0TPL6oA&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9BtkdtXhpph4GAsKXVlagwwuWRx14pWiegnM5saJBurn-QymA-N2YlmHnqRRg5ruenGs&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwukbxog-ES3nlQwX89-401zZpLq8BBNaJJA&usqp=CAU",
+        "https://th-thumbnailer.cdn-si-edu.com/VNh973F6LpmS0q7hIrcxWenOAZY=/1000x750/filters:no_upscale():focal(2582x1721:2583x1722)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/71/3d/713dab44-f159-448c-afbf-2b2a033eed5a/gettyimages-945647972.jpg"
+      ],
+      "info": [
+        "Es un lémur nocturno de dedos largos, siendo el dedo del medio especialmente delgado, con dientes parecidos a los de los roedores. Su pelaje es largo y negro salvo su cara, donde se aclara hasta ser blanquecino.",
+        "Además, tiene amplias orejas y ojos, grandes y amarillos, típicos de los animales nocturnos.",
+        "Para encontrar comida, realiza golpes rítmicos sobre la corteza, luego roe agujeros usando sus incisivos para crear un pequeño agujero en el que inserta su angosto dedo medio para tirar de la madera."
+      ],
+      "interestingFact": [
+        "A menudo se ve como un presagio del mal. Otros creen que si uno señala a alguien con el dedo más angosto, está marcado para morir. Por esto, se lo mata al verlo."
+      ],
+      "name": "aye-aye"
+    },
+    {
+      "imgs": [
+        "https://misanimales.com/wp-content/uploads/2019/04/fosa.jpg",
+        "https://lazoo.org/wp-content/uploads/2020/02/Fossa-JEP_1241.jpg",
+        "https://www.naturalezacuriosa.com/wp-content/uploads/2013/05/Cryptoprocta_ferox.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01H17q4zZAEPGOAT2DbvNeuAUkwEuvJJZlA&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfBB3Vgnk7hhq2phQ8qrRR00i0acy_jRJmw&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkWrpIeZKRcmzPI0cDW_WUMgOXkgwmwX7rgw&usqp=CAU",
+        "https://images.squarespace-cdn.com/content/v1/5f123af27a604e2499ab6408/1611018463748-7D1YQ8RNZTOT64XRWSKQ/3-Kirindy_Forest_Reserve_2013110219.jpg",
+        "https://safariwisetours.com/wp-content/uploads/2020/11/kirindi-Forest-Reserve-scaled.jpg"
+      ],
+      "info": [
+        "Es el animal carnívoro nativo más grande de Madagascar",
+        "Su apariencia y fisiología es similar a la de un gato grande pero con hocico similar al de un perro, pero no pertenece al grupo de los félidos.",
+        "Se caracteriza por tener un cuerpo alargado, musculoso y ágil, de pelaje corto pero denso de rojo a marrón oscuro y grandes ojos. Los fosas pueden correr a gran velocidad por el suelo y subirse a los árboles rápidamente. Pudiendo incluso saltar de un árbol a otro. De hábitos nocturnos y se alimenta principalmente de lémures y aves."
+      ],
+      "interestingFact": [
+        "Se suele cazarlos para evitar que se alimente tanto del ganado y de otros animales. Esto, junto con la destrucción del hábitat salvaje de Madagascar, sitúa a la fosa en un estado amenazado de conservación."
+      ],
+      "name": "fosa"
+    },
+    {
+      "info": [
+        "Es un animal nocturno que se alimenta de insectos. Su cuerpo es alargado y plano, con una cabez ligeramente triangular y una cola ancha que se asemeja a una hoja seca; es de moteado y presenta colores entre el verde, el gris y sobre todo el marrón.",
+        "Tienen una saliente en forma de pestañas, por encima de sus ojos. Pero no poseen párpados, sólo una cubierta transparente sobre sus ojos, por lo que usan su lengua para limpiar cualquier resto de polbo o suciedad que entra en el ojo."
+      ],
+      "imgs": [
+        "https://www.hogarmania.com/archivos/201706/reptiles-gecko-cola-de-hoja-668x400x80xX.jpg",
+        "https://soloanimales.com/wp-content/uploads/2016/06/informaci%C3%B3n-sobre-el-gecko-sat%C3%A1nico-con-cola-de-hoja-1-e1465849056226-500x307.jpg",
+        "https://st1.uvnimg.com/dims4/default/1a1c899/2147483647/thumbnail/480x270/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fbtg%2Fcuriosidades.batanga.com%2Ffiles%2FUn-animal-muy-extrano-el-Gecko-satanico-con-cola-de-hoja-2.jpg",
+        "https://misanimales.com/wp-content/uploads/2018/03/gecko-cola-de-hoja-satanico.jpg",
+        "https://static.wikia.nocookie.net/reinoanimalia/images/a/a1/Gecko_satanico_2.png/revision/latest/scale-to-width-down/250?cb=20140310215500&path-prefix=es",
+        "https://www.ecured.cu/images/1/13/Uroplatus-phantasticus-3.jpg",
+        "https://i.ytimg.com/vi/wh5oQF-d-6U/mqdefault.jpg",
+        "https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/O54ZX7SHOFHOPCWA4D3NXSB454.jpg"
+      ],
+      "interestingFact": [
+        "Los lugareños los denominan \"Taha-fisaka\", que significa demonio o diablo. Por lo que también se lo conoce como: Gecko cola de hoja satánico."
+      ],
+      "name": "gecko cola de hoja"
+    },
+    {
+      "interestingFact": [
+        "Reciben su nombre de la mitología romana, lemŭres, y significa \"fantasmas o esspectros nocturnos\", debido a las estrepitosas vocalizaciones que emite, sus ojos brillantes y los hábitos nocturnos de algunas especies."
+      ],
+      "info": [
+        "Es un animal diurno altamente social viviendo en grupos de hasta treinta individuos.",
+        "Es un lémur relativamente grande; su longitud corporal varía entre 39 y 46cm, con una cola de entre 56 y 63 cm.",
+        "Tiene una cara estrecha, con un hocico parecido al de un zorro. Su larga y tupida cola tiene unos 12-13 anillos formados por franjas transversales alternas blancas y negras, que siempre terminan en una punta negra. Y la utiliza para el equilibrio y para la comunicación y la cohesión de grupo."
+      ],
+      "imgs": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXDXwJh_cWPt-ln-yPmRZFCo5a7x7eJWz2_71udz3jUFf5ARl67KnwhR3aalxWUh4gsrc&usqp=CAU",
+        "https://www.monkeysanctuary.co.za/images/Blog/Fascinating_Lemurs/Lemur_love_groom.jpg",
+        "https://www.faunia.es/content/dam/fau/images/descubre-faunia/planea-tu-visita/animales/mami%CC%81feros/le%CC%81mur-de-cola-anillada/Lemur-de-cola-anillada-Animales-Faunia-2.jpg",
+        "https://noticiasya.com/wp-content/uploads/sites/3/2022/06/1.jpg?w=1024",
+        "https://www.bioparcvalencia.es/wp-content/uploads/2017/06/interiores-animal-bioparc-valencia-lemur-cola-anillada-02.jpg",
+        "https://www.zoobotanicojerez.com/fileadmin/_processed_/0/5/csm_IMG_7259_como_objeto_inteligente-1_7fef91fe09.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTz8GBpwEsDYUNPGpgiKhEJeCYKGUSZFi2Cg&usqp=CAU",
+        "https://as1.ftcdn.net/v2/jpg/02/91/02/68/1000_F_291026866_zyDZLJ7DiUpsGgV44ZtBAjYu917DEna3.jpg"
+      ],
+      "name": "lémur de cola anillada"
+    }
+  ],
+  "flora": [
+    {
+      "imgs": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4mH4TItW3zaMe_DT8LkGvSlES-AW73TOPgA&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94X-ELaRdYobMeYhOAEaDKjFSK8M9zHQaDw&usqp=CAU",
+        "https://img.atlasobscura.com/3Dj7yeJ2RuvdgrdCgAVVWAnSFu9_DdF9Aw0hu6HEVGs/rt:fit/w:720/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy85OTYyM2U5Mjdi/NmJhYWI5ODVfQmV0/aCBNb29uX0Jhb2Jh/Yl9wNzIuanBn.jpg",
+        "https://us.123rf.com/450wm/mihtiander/mihtiander1402/mihtiander140200569/25583811-%C3%A1rboles-del-baobab-en-una-tierra-seca-y-el-cielo-azul-claro-madagascar.jpg?ver=6",
+        "https://www.xlsemanal.com/wp-content/uploads/sites/3/2017/04/BAOBAB-MADAGASCAR-PASCAL-MAITRE-xlsemanal-1.jpg",
+        "https://static.wixstatic.com/media/2821d3_49cc9d824ad64725bb84d9e82cd51f4f~mv2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2821d3_49cc9d824ad64725bb84d9e82cd51f4f~mv2.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS72pHdh2N5dTvvyq99tviMapFPgxtSOlgO7Q&usqp=CAU"
+      ],
+      "info": [
+        "También se lo conoce como pan de mono o árbol plantado al revés. Es uno de los árboles más hermosos de África, simboliza la esperanza del pueblo, la victoria de la fuerza y la determinación contra la escasez y la injusticia.",
+        "Existen ocho especies distintas de las cuales seis son endémicas de Madagascar. El diámetro de su tronco según la especie va de los dos metro hasta los diez metros y alcanzan alturas desde los cinco hasta los treinta metros de altura.",
+        "La esperanza de vida es de unos 1000 años. Sin embargo se encontraron especimenes con más de 4000 años de vida."
+      ],
+      "interestingFact": [
+        "Es el símbolo nacional de Madagascar.",
+        "Según una de las leyendas, los baobabs eran unos árboles tan bellos que los dioses les concedieron el don de la larga vida. Entonces, envanecidos por el regalo, comenzaron a crecer desmedidamente llegando incluso a desafiar a los dioses, quienes como lección de humildad hicieron que crezca al revés, con las raíces hacia el cielo y las flores bajo tierra."
+      ],
+      "name": "baobab"
+    },
+    {
+      "imgs": [
+        "https://www.tamatavetsara.com/wp-content/uploads/2020/08/Tamagas4.jpg",
+        "https://p4.wallpaperbetter.com/wallpaper/476/691/748/ravinala-palm-trees-river-madagascar-wallpaper-preview.jpg",
+        "https://pbs.twimg.com/media/DfeCP_KXUAAzIiD.jpg",
+        "https://www.tamatavetsara.com/wp-content/uploads/2020/08/Tamagas4.jpg",
+        "http://4.bp.blogspot.com/-8stNIzK5Iwk/TeXRBI9o1FI/AAAAAAAACj4/uyNYknEo3qU/s1600/6689_10637.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD2VO0CzyrWGMOIB8JHW_ELYmP1JrHR7-PVA&usqp=CAU"
+      ],
+      "info": [
+        "Es un árbol sin ramificaciones que puede alcanzar más de 12m de altura. Suele desarrollar alrededor de 20 grandes hojas en forma de abanico dispuests en un solo plano.",
+        "Sus hojas están sostenidas por peciolos de más de 3m que surgen de vinas en el ápice del tronco. Al envejecer, las hojas inferiores se amarillean y se rompen hasta caer formando un anillos circulares de vainas endurecidas.",
+        "Debido a su asilvestrado en otras zonas donde fue importada, hoy en día es considerada como planta invasora."
+      ],
+      "interestingFact": [
+        "Su nombre proviene del hecho de que los viajeros sedientos podían encontrar agua depositada en muchas partes de la planta."
+      ],
+      "name": "palma del viajero"
+    }
+  ],
+  "sitios": [
+    {
+      "imgs": [
+        "https://i.pinimg.com/736x/10/92/12/109212a0b4efc2d083ea70b52b9807fb.jpg",
+        "https://s10.s3c.es/imag/_v0/770x420/c/7/5/490x_Avenidas-baobas-madagascar-Christian-Offenberg-Dreamstime.jpg",
+        "https://img1.viajar.elperiodico.com/21/b4/d7/avenida-baobabs-madagascar-650x428.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaJxHZLPIYckrQf8SsSBn1pblUrQmJNNJkuTjHgHwqE8KkOrxPM1Uxxrw1VZaopgZiaY&usqp=CAU",
+        "https://static.wixstatic.com/media/bb2fa5_f78cd229889d464aadd8444411ff7e51~mv2.jpg/v1/fit/w_850%2Ch_400%2Cal_c%2Cq_80/file.jpg",
+        "https://www.lavanguardia.com/files/article_main_microformat/files/fp/uploads/2019/10/07/5fa53405bf595.r_d.333-213-18293.jpeg"
+      ],
+      "info": [
+        "Es un grupo notable de baobabs de la especie Adansonia grandidieri que bordean un camino de tierra entre Morondava y Belon'i Tsiribihina en la región de Menabe",
+        "Dentro del área protegida que abarca 3,2km², pero se conoce como la Avenida de los Baobabs a un tramo de 250m.",
+        "Las especies de baobabs que se encuentran son: Adansonia grandidieri y baobab enamorados (Adansonia za), que  personifican el amor imposible entre una joven pareja de dos aldeas próximas, que pidieron a su dios poder vivir juntos."
+      ],
+      "interestingFact": [
+        "La reserva protegida de Menabe Antimena, donde se encuentra la avenida de los baobabs, perdió el 7% de su hábitat debido a los años de continua deforestación causada por los incendios provocados hacen lo que hacían sus padres y sus abuelos antes que ellos. Talan los árboles para obtener terrenos de cultivo, pastos para el ganado y combustible. A lo largo de toda la isla se vende carbón vegetal para alimentar los fuegos de todos los hogares."
+      ],
+      "name": "Avenida de los Baobabs"
+    },
+    {
+      "imgs": [
+        "https://img2.viajar.elperiodico.com/28/3f/2d/tsigny-madagascar-650x432.jpg",
+        "https://www.nationalgeographic.com.es/medio/2009/11/16/bosquepiedra2_714x476.jpg",
+        "https://www.nationalgeographic.com.es/medio/2009/11/17/bosquepiedra9_714x476.jpg",
+        "https://img4.viajar.elperiodico.com/0a/7e/9c/tsigny-madagascar-650x422.jpg",
+        "https://globalvoicesonline.org/wp-content/uploads/2012/11/stone-forest-Tsingy_rocher.jpg",
+        "https://www.escapadah.com/u/fotografias/m/2023/1/4/f768x400-14210_58113_5050.jpg"
+      ],
+      "info": [
+        "Es un conjunto de mesetas cársticas formadas por aguas subterráneas almacenadas en elevados picos de piedra caliza, los cuales conforman un enorme macizo compuesto por afiladas e inestables montañas rocosas de diversas alturas, que pueden llegar a superar los 120 metros."
+      ],
+      "interestingFact": [
+        "Su nombre, Tsingy, significa \"donde no se puede caminar descalzo\".",
+        "Fue declarado Patrimonio de la Humanidad en 1990. Otorgada no solo por sus paisajes y riqueza geológica, sino también por la gran riqueza biológica de la zona."
+      ],
+      "name": "Bosque de piedra de Tsingy"
+    }
+  ]
+}
