@@ -1,0 +1,82 @@
+.linkMenu::before {
+	--height-line: 0.15em;
+
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: var(--height-line);
+	border-radius: calc(var(--height-line) / 2);
+	background-color: rgb(18 154 8 / 0.84);
+	transition: width 300ms ease-in-out;
+}
+
+.linkMenu:hover::before {
+	width: 100%;
+}
+
+.menuButton {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px transparent;
+	z-index: 50;
+}
+
+.menuButton__line {
+	--height-line: 0.25rem;
+	--position-top-line: calc(2 * var(--height-line));
+	--position-bottom-line: calc(-2 * var(--height-line));
+
+	position: relative;
+	display: block;
+	height: var(--height-line);
+	width: 1.8rem;
+	background-color: var(--color-white-pure-alpha-80);
+	border-radius: calc(var(--height-line) / 2);
+	box-shadow: 0 var(--position-top-line) var(--color-white-pure-alpha-80),
+		0 var(--position-bottom-line) var(--color-white-pure-alpha-80);
+	transition: box-shadow 300ms ease-in;
+}
+
+.menuButton.collapse .menuButton__line {
+	box-shadow: 0 0 transparent, 0 0 transparent;
+}
+
+.skipNav,
+.headerPage {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: var(--bg-header-page);
+}
+
+.headerPage {
+	transition: background-color 300ms linear;
+}
+
+/* .menu_view, */
+.headerPage.light {
+	background-color: #0d3004;
+}
+
+.headerPage.dark {
+	background-color: #0e1c2c;
+}
+
+.transition-rotate-icon {
+	transition: transform 600ms linear;
+}
+
+[link-header].active {
+	color: rgb(16 255 0 / 0.84);
+}
+
+.menu_view {
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.transition-visible {
+	transition: visibility 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
