@@ -6,6 +6,9 @@ module.exports = {
 			backgroundImage: {
 				'hero-footer': 'url("/images/hero-footer.jpg")',
 				'hero-night': 'url("/images/hero-dark.jpg")'
+			},
+			gridTemplateColumns: {
+				suggestions: 'repeat(auto-fit, minmax(auto, 18rem))'
 			}
 		}
 	},
