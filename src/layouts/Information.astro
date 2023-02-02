@@ -1,0 +1,99 @@
+---
+import Card from '@components/Card.astro'
+import type { IAnimal } from '@typings/Animal'
+import type { IPlant } from '@typings/Plant'
+import type { ISite } from '@typings/Sites'
+import type { ISuggestionOption } from '@typings/SuggestionOption'
+
+type Props = {
+	info: IAnimal | IPlant | ISite
+	suggestions: ISuggestionOption[]
+}
+
+const { info, suggestions }: Props = Astro.props
+const name = decodeURI(info.name)
+---
+
+<script>
+	const presentationImg = document.querySelector('[principal-img]') as HTMLImageElement
+	const slider = document.querySelector('[imgs-slider]') as HTMLElement
+
+	const imgs = slider.querySelectorAll('img')
+
+	imgs.forEach((img) => {
+		img.addEventListener('click', (ev) => {
+			const elemImg = ev.currentTarget as HTMLImageElement
+			const src = elemImg.src
+			presentationImg.src = src
+
+			imgs.forEach((img) => img.classList.remove('active'))
+			elemImg.classList.add('active')
+		})
+	})
+</script>
+
+<section>
+	<div class="bg-black overflow-hidden">
+		<div
+			style={`background-image: url("${info.imgs[0]}");`}
+			class="w-full h-[60vh] bg-no-repeat bg-center bg-cover blur-sm afterShadow"
+		>
+		</div>
+	</div>
+	<article class="absolute top-[100px] grid grid-cols-2 gap-12 mx-28 p-8 bg-[#202020] rounded-md">
+		<div class="flex flex-col gap-4 w-[360px]">
+			<img
+				src={info.imgs[0]}
+				alt=""
+				width="360"
+				height="240"
+				class="w-[360px] h-[240px] object-cover object-center"
+				principal-img
+			/>
+			<section class="relative max-w-full overflow-x-scroll">
+				<div class="relative top-0 flex gap-3 w-full" imgs-slider>
+					{
+						info.imgs.map((img, ind) => (
+							<img
+								src={img}
+								alt=""
+								class={`w-28 max-h-28 mb-2 object-cover object-center border-2 border-transparent cursor-pointer ${
+									ind === 0 ? 'active' : ''
+								}`}
+								width="112"
+								height="112"
+								loading={ind <= 2 ? 'eager' : 'lazy'}
+							/>
+						))
+					}
+				</div>
+			</section>
+		</div>
+		<section class="max-w-[60ch]">
+			<h1 class="mb-4 text-3xl font-bold capitalize">{name}</h1>
+			<div>
+				{info.info.map((paragraph) => <p class="mb-2 text-base last:mb-3.5">{paragraph}</p>)}
+			</div>
+			<div class="p-3.5 bg-slate-800 rounded-md">
+				<slot />
+			</div>
+		</section>
+	</article>
+	<section class="grid grid-cols-suggestions justify-center gap-8 mt-64">
+		{suggestions.map(({ img, name, href }) => <Card href={href} img={img} name={name} />)}
+	</section>
+</section>
+
+<style>
+	.afterShadow::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0 0 0 / 0.7);
+	}
+
+	[imgs-slider] img.active {
+		border: solid 2px white;
+	}
+</style>

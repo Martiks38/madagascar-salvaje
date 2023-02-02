@@ -1,0 +1,23 @@
+---
+const { href, img, name } = Astro.props
+---
+
+<a
+	href={href}
+	class="relative block h-[217px] max-w-[18rem] rounded-md overflow-hidden suggestionCard"
+>
+	<figure>
+		<img src={img} alt={name} loading="lazy" class="w-full object-cover object-center" />
+		<figcaption
+			class="absolute bottom-0 w-full h-max p-4 bg-black border-t-4 border-[#FFF2] font-semibold text-lg text-center capitalize"
+		>
+			{name}
+		</figcaption>
+	</figure>
+</a>
+
+<style>
+	.suggestionCard:hover {
+		box-shadow: 0 2px 5px rgb(255 255 255 / 0.16), 0 2px 10px rgb(255 255 255 / 0.12);
+	}
+</style>
