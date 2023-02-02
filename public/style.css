@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg-body: #eaeaea;
+	--bg-header-page: #044;
+
+	--color-black-pure: #000;
+	--color-white-pure-alpha-80: rgba(255, 255, 255, 0.8);
+}
+
+body {
+	background-color: var(--bg-body);
+	transition: background-color 300ms linear;
+}
+
+body.light {
+	background-color: #eaeaea;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+body.dark {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: #06121b;
+}
+
+html {
+	font-family: system-ui, sans-serif;
+	background-color: #f6f6f6;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color: rgba(255, 255, 255, 0.8);
+
+		--bg-body: #06121b;
+		--bg-header-page: #0e1c2c;
+	}
+}
