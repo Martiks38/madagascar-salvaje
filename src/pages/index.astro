@@ -1,11 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '@layouts/Layout.astro'
 
 const title = 'Madagascar Salvaje'
 ---
 
 <Layout title={title}>
-	<main class="max-w-screen-xl mx-auto pb-20 px-6 text-white">
+	<main class="max-w-screen-xl mx-auto pb-20 px-6">
 		<div class="relative h-[80vh] w-full mb-20 bg-hero-night bg-no-repeat bg-cover bg-center">
 			<h1
 				class="absolute text-5xl bottom-40 left-24 text-white uppercase title-responsive textShadow"
@@ -54,9 +54,7 @@ const title = 'Madagascar Salvaje'
 						class="w-full h-full object-cover lg:group-hover:scale-150 transition-[transform_400ms_linear] bg-black"
 						loading="lazy"
 					/>
-					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold text-white textShadow">
-						Fauna
-					</h3>
+					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold textShadow">Fauna</h3>
 				</a>
 				<a
 					href="/flora"
@@ -68,9 +66,7 @@ const title = 'Madagascar Salvaje'
 						class="w-full h-full object-cover lg:group-hover:scale-150 transition-[transform_400ms_linear]"
 						loading="lazy"
 					/>
-					<h3 class="absolute bottom-0 right-6 mb-4 text-3xl font-bold text-white textShadow">
-						Flora
-					</h3>
+					<h3 class="absolute bottom-0 right-6 mb-4 text-3xl font-bold textShadow">Flora</h3>
 				</a>
 				<a href="/sites" class="group relative block grow h-96 overflow-hidden">
 					<img
@@ -79,7 +75,7 @@ const title = 'Madagascar Salvaje'
 						class="w-full h-full object-cover lg:group-hover:scale-150 transition-[transform_400ms_linear]"
 						loading="lazy"
 					/>
-					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold text-white textShadow">
+					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold textShadow">
 						Lugares naturales
 					</h3>
 				</a>
