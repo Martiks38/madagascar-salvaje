@@ -27,6 +27,5 @@ export const generateSuggestions = ({
 		? suggestions
 		: suggestions.filter((el) => {
 				return el.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '') !== exclude
-				// eslint-disable-next-line no-mixed-spaces-and-tabs
 		  })
 }
