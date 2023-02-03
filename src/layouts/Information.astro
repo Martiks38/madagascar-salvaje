@@ -29,15 +29,6 @@ const name = decodeURI(info.name)
 			imgs.forEach((img) => img.classList.remove('active'))
 			elemImg.classList.add('active')
 		})
-
-		img.addEventListener('touch', (ev) => {
-			const elemImg = ev.currentTarget as HTMLImageElement
-			const src = elemImg.src
-			presentationImg.src = src
-
-			imgs.forEach((img) => img.classList.remove('active'))
-			elemImg.classList.add('active')
-		})
 	})
 </script>
 
