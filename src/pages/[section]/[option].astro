@@ -1,0 +1,59 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Information from '@layouts/Information.astro'
+import { generateSuggestions } from '@utils/generateSuggestion'
+import * as data from '@assets/db/dataDB.json'
+import type { ISuggestionOption } from '@typings/SuggestionOption'
+import type { IAnimal } from '@typings/Animal'
+import { toCapitalize } from '@utils/toCapitalize'
+import type { IPlant } from '@typings/Plant'
+import type { ISite } from '@typings/Sites'
+
+type Options = keyof typeof data
+
+export function getStaticPaths() {
+	const sections = Object.keys(data).slice(0, -1)
+	const options = sections.map((section) => Object.values(data[section as Options]))
+
+	const routes = sections.map((section: string, ind: number) => {
+		return options[ind].map((op) => {
+			const option = op.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+			return {
+				params: { section, option }
+			}
+		})
+	})
+
+	return routes
+}
+
+const { section, option } = Astro.params
+const title = toCapitalize(option as string) + ' | Madagascar Salvaje'
+
+const infoOption = data.fauna.find(
+	(info) => info.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '') === option
+) as IAnimal | IPlant | ISite | undefined
+
+const suggestions: ISuggestionOption[] = generateSuggestions({
+	section: section as string,
+	path: `/${section}`,
+	exclude: option as string
+})
+console.log('Entre a section')
+---
+
+<Layout title={title}>
+	<main class="max-w-screen-xl mx-auto pb-20 lg:px-6">
+		{
+			infoOption && (
+				<Information info={infoOption} suggestions={suggestions}>
+					<h2 class="font-semibold">Curiosidad</h2>
+					{infoOption?.interestingFact
+						? infoOption.interestingFact?.map((paragraph) => <p>{paragraph}</p>)
+						: null}
+				</Information>
+			)
+		}
+	</main>
+</Layout>

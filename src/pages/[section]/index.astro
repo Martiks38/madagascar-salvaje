@@ -1,0 +1,33 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { toCapitalize } from '@utils/toCapitalize'
+import { generateSuggestions } from '@utils/generateSuggestion'
+import type { ISuggestionOption } from '@typings/SuggestionOption'
+import Card from '@components/Card.astro'
+
+export function getStaticPaths() {
+	const sections = ['fauna', 'flora', 'sitios']
+
+	return sections.map((section) => ({ params: { section } }))
+}
+
+const { section } = Astro.params
+
+const sectionName = toCapitalize(section as string)
+
+const title = `${sectionName} | Madagascar Salvaje`
+
+const suggestions: ISuggestionOption[] = generateSuggestions({
+	section: section as string,
+	path: `/${section}`
+})
+---
+
+<Layout title={title}>
+	<main class="max-w-screen-xl mx-auto pb-20 px-6">
+		<h1 class="mt-12 mb-20 font-bold text-center text-5xl uppercase">{sectionName}</h1>
+		<article class="grid justify-items-center gap-8 sm:grid-cols-2 xl:grid-cols-4">
+			{suggestions.map(({ img, href, name }) => <Card href={href} img={img} name={name} />)}
+		</article>
+	</main>
+</Layout>
