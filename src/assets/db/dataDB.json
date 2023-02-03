@@ -62,14 +62,6 @@
       "name": "gecko cola de hoja"
     },
     {
-      "interestingFact": [
-        "Reciben su nombre de la mitología romana, lemŭres, y significa \"fantasmas o esspectros nocturnos\", debido a las estrepitosas vocalizaciones que emite, sus ojos brillantes y los hábitos nocturnos de algunas especies."
-      ],
-      "info": [
-        "Es un animal diurno altamente social viviendo en grupos de hasta treinta individuos.",
-        "Es un lémur relativamente grande; su longitud corporal varía entre 39 y 46cm, con una cola de entre 56 y 63 cm.",
-        "Tiene una cara estrecha, con un hocico parecido al de un zorro. Su larga y tupida cola tiene unos 12-13 anillos formados por franjas transversales alternas blancas y negras, que siempre terminan en una punta negra. Y la utiliza para el equilibrio y para la comunicación y la cohesión de grupo."
-      ],
       "imgs": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXDXwJh_cWPt-ln-yPmRZFCo5a7x7eJWz2_71udz3jUFf5ARl67KnwhR3aalxWUh4gsrc&usqp=CAU",
         "https://www.monkeysanctuary.co.za/images/Blog/Fascinating_Lemurs/Lemur_love_groom.jpg",
@@ -79,6 +71,14 @@
         "https://www.zoobotanicojerez.com/fileadmin/_processed_/0/5/csm_IMG_7259_como_objeto_inteligente-1_7fef91fe09.jpg",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTz8GBpwEsDYUNPGpgiKhEJeCYKGUSZFi2Cg&usqp=CAU",
         "https://as1.ftcdn.net/v2/jpg/02/91/02/68/1000_F_291026866_zyDZLJ7DiUpsGgV44ZtBAjYu917DEna3.jpg"
+      ],
+      "info": [
+        "Es un animal diurno altamente social viviendo en grupos de hasta treinta individuos.",
+        "Es un lémur relativamente grande; su longitud corporal varía entre 39 y 46cm, con una cola de entre 56 y 63 cm.",
+        "Tiene una cara estrecha, con un hocico parecido al de un zorro. Su larga y tupida cola tiene unos 12-13 anillos formados por franjas transversales alternas blancas y negras, que siempre terminan en una punta negra. Y la utiliza para el equilibrio y para la comunicación y la cohesión de grupo."
+      ],
+      "interestingFact": [
+        "Reciben su nombre de la mitología romana, lemŭres, y significa \"fantasmas o esspectros nocturnos\", debido a las estrepitosas vocalizaciones que emite, sus ojos brillantes y los hábitos nocturnos de algunas especies."
       ],
       "name": "lémur de cola anillada"
     }
