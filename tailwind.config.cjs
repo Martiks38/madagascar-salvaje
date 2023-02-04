@@ -12,6 +12,9 @@ module.exports = {
 			},
 			gridTemplateColumns: {
 				suggestions: 'repeat(auto-fit, minmax(auto, 18rem))'
+			},
+			screens: {
+				submd: '680px'
 			}
 		}
 	},
