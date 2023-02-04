@@ -60,12 +60,13 @@ const name = decodeURI(info.name)
 							<img
 								src={img}
 								alt=""
-								class={`w-28 max-h-28 mb-2 object-cover object-center border-2 border-transparent cursor-pointer ${
+								class={`w-28 max-h-28 mb-2 object-cover object-center  cursor-pointer borderSelect ${
 									ind === 0 ? 'active' : ''
 								}`}
 								width="112"
 								height="112"
 								loading={ind <= 2 ? 'eager' : 'lazy'}
+								dark-theme
 							/>
 						))
 					}
@@ -101,10 +102,6 @@ const name = decodeURI(info.name)
 		background-color: rgb(0 0 0 / 0.7);
 	}
 
-	#slider img.active {
-		border: solid 2px white;
-	}
-
 	.scrollStyles::-webkit-scrollbar-track {
 		margin-block: 0.5em;
 	}
@@ -126,5 +123,17 @@ const name = decodeURI(info.name)
 
 	.bgInterestingFact.dark {
 		background-color: rgb(30 41 59);
+	}
+
+	.borderSelect {
+		border: solid 4px transparent;
+	}
+
+	.borderSelect.active {
+		border-color: black;
+	}
+
+	.borderSelect.active.dark {
+		border-color: white;
 	}
 </style>
