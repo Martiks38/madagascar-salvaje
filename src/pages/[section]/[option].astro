@@ -40,9 +40,13 @@ const suggestions: ISuggestionOption[] = generateSuggestions({
 	path: `/${section}`,
 	exclude: option as string
 })
+
+const intro = infoOption?.info.slice(0, 2).join(' ')
+
+const description = `${toCapitalize(option as string)}. ${intro}`
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
 	<main class="max-w-screen-xl mx-auto pb-20 lg:px-6">
 		{infoOption && <Information info={infoOption} suggestions={suggestions} />}
 	</main>

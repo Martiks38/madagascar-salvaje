@@ -1,12 +1,15 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import Card from '@components/Card.astro'
 import { toCapitalize } from '@utils/toCapitalize'
 import { generateSuggestions } from '@utils/generateSuggestion'
+import * as data from '@assets/db/dataDB.json'
 import type { ISuggestionOption } from '@typings/SuggestionOption'
-import Card from '@components/Card.astro'
+
+type Options = keyof typeof data
 
 export function getStaticPaths() {
-	const sections = ['fauna', 'flora', 'sitios']
+	const sections = Object.keys(data)
 
 	return sections.map((section) => ({ params: { section } }))
 }
@@ -21,9 +24,17 @@ const suggestions: ISuggestionOption[] = generateSuggestions({
 	section: section as string,
 	path: `/${section}`
 })
+
+const description = {
+	fauna:
+		'Conoce a los principales animales de Madagascar como el Lémur de cola anillada, el fosa o el extraño Aye-Aye.',
+	flora: 'Conoce el emblema de la isla, la palma del viajero o el increíble baobab.',
+	sitios:
+		'Pasea por la avenida de los Baobabs y conoce sobre el bosque de piedra más grande del mundo Tsingy.'
+}
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description[section as Options]}>
 	<main class="max-w-screen-xl mx-auto pb-20 px-6">
 		<h1 class="mt-12 mb-20 font-bold text-center text-5xl uppercase">{sectionName}</h1>
 		<article class="grid justify-items-center gap-8 sm:grid-cols-2 xl:grid-cols-4">
