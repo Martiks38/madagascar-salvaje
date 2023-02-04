@@ -3,10 +3,11 @@ import Header from '../common/Header.astro'
 import { toCapitalize } from '@utils/toCapitalize'
 
 export interface Props {
+	description: string
 	title: string
 }
 
-const { title }: Props = Astro.props
+const { description, title }: Props = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -16,6 +17,13 @@ const { title }: Props = Astro.props
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<link rel="canonical" href={Astro.url.href} />
+		<meta property="og:image" content="/logo.svg" />
+		<meta property="og:title" content={toCapitalize(title)} />
+		<meta property="og:url" content={Astro.url.href} />
+		<meta property="og:local" content="es-ES" />
+		<meta property="og:type" content="website" />
 		<title>{toCapitalize(title)}</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +32,6 @@ const { title }: Props = Astro.props
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=fallback"
 			rel="stylesheet"
 		/>
-
 		<link rel="stylesheet" href="/style.css" />
 		<script src="../scripts/index.ts"></script>
 	</head>
