@@ -18,6 +18,5 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# pnpm
 pnpm-lock.yaml
-
-.vscode/
