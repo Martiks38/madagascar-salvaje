@@ -44,15 +44,6 @@ const suggestions: ISuggestionOption[] = generateSuggestions({
 
 <Layout title={title}>
 	<main class="max-w-screen-xl mx-auto pb-20 lg:px-6">
-		{
-			infoOption && (
-				<Information info={infoOption} suggestions={suggestions}>
-					<h2 class="font-semibold">Curiosidad</h2>
-					{infoOption?.interestingFact
-						? infoOption.interestingFact?.map((paragraph) => <p>{paragraph}</p>)
-						: null}
-				</Information>
-			)
-		}
+		{infoOption && <Information info={infoOption} suggestions={suggestions} />}
 	</main>
 </Layout>
