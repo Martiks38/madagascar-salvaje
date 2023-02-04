@@ -41,7 +41,8 @@ const name = decodeURI(info.name)
 		</div>
 	</div>
 	<article
-		class="-translate-y-[10%] grid grid-cols-1 justify-items-center gap-4 mx-auto p-8 bg-[#202020] w-full xl:grid-cols-2 sm:-translate-y-1/4 sm:w-[80%] sm:rounded-md"
+		class="-translate-y-[10%] grid grid-cols-1 justify-items-center gap-4 mx-auto p-8 bg-[#e1ddd7] w-full xl:grid-cols-2 sm:-translate-y-1/4 sm:w-[80%] sm:rounded-md bgCard"
+		dark-theme
 	>
 		<div class="flex flex-col gap-4 w-full sm:w-[360px] order-1">
 			<img
@@ -76,8 +77,13 @@ const name = decodeURI(info.name)
 			<div>
 				{info.info.map((paragraph) => <p class="mb-2 text-base last:mb-3.5">{paragraph}</p>)}
 			</div>
-			<div class="p-3.5 bg-slate-800 rounded-md">
-				<slot />
+			<div class="p-3.5 bg-[rgb(113_165_249)] rounded-md bgInterestingFact" dark-theme>
+				<h2 class="text-xl font-semibold">Curiosidad</h2>
+				{
+					info?.interestingFact
+						? info.interestingFact?.map((paragraph) => <p>{paragraph}</p>)
+						: null
+				}
 			</div>
 		</section>
 	</article>
@@ -112,5 +118,13 @@ const name = decodeURI(info.name)
 		height: 8px;
 		background-color: #06121b;
 		border-radius: 4px;
+	}
+
+	.bgCard.dark {
+		background-color: #202020;
+	}
+
+	.bgInterestingFact.dark {
+		background-color: rgb(30 41 59);
 	}
 </style>

@@ -8,7 +8,7 @@ const title = 'Madagascar Salvaje'
 	<main class="max-w-screen-xl mx-auto pb-10 md:pb-20 xl:px-6">
 		<div class="relative h-[80vh] w-full mb-20 bg-hero-night bg-no-repeat bg-cover bg-center">
 			<h1
-				class="absolute text-5xl bottom-40 left-24 text-white uppercase title-responsive textShadow"
+				class="absolute text-5xl bottom-40 w-full sm:w-fit sm:left-20 text-white uppercase title-responsive textShadow text-center sm:text-left"
 			>
 				{title}
 			</h1>
@@ -35,13 +35,13 @@ const title = 'Madagascar Salvaje'
 			</div>
 		</section>
 		<section class="px-10 py-6">
-			<h2 class="mb-8 text-2xl text-center uppercase">
+			<h2 class="mb-8 text-2xl font-bold text-center uppercase">
 				Descubre los extraños animales y plantas de Madagascar
 			</h2>
 			<p class="max-w-[55ch] lg:max-w-[85ch] mx-auto pb-6 text-xl">
 				Esta maravillosa isla cuenta con una variedad de flora, como el jazmín de Madagascar, el
 				baobab o el Ravinala, o árbol del viajero, así como animales, siendo los más representativos
-				los lémures y otros animales tan raros y extraños como el Aye. - Sí. Además, paisajes
+				los lémures y otros animales tan raros y extraños como el aye-aye. Además, paisajes
 				espectaculares como el Bosque de Piedras Tsingy, el Bulevar Baobab o la increíble playa de
 				Nosy Boraha.
 			</p>
@@ -56,7 +56,9 @@ const title = 'Madagascar Salvaje'
 						class="w-full h-full object-cover lg:group-hover:scale-150 transition-[transform_400ms_linear] bg-black"
 						loading="lazy"
 					/>
-					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold textShadow">Fauna</h3>
+					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold text-white textShadow">
+						Fauna
+					</h3>
 				</a>
 				<a
 					href="/flora"
@@ -69,7 +71,7 @@ const title = 'Madagascar Salvaje'
 						loading="lazy"
 					/>
 					<h3
-						class="absolute bottom-0 left-6 lg:left-0 lg:right-6 mb-4 text-3xl font-bold textShadow"
+						class="absolute bottom-0 left-6 lg:left-0 lg:right-6 mb-4 text-3xl font-bold text-white textShadow"
 					>
 						Flora
 					</h3>
@@ -81,7 +83,7 @@ const title = 'Madagascar Salvaje'
 						class="w-full h-full object-cover lg:group-hover:scale-150 transition-[transform_400ms_linear]"
 						loading="lazy"
 					/>
-					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold textShadow">
+					<h3 class="absolute bottom-0 left-6 mb-4 text-3xl font-bold text-white textShadow">
 						Lugares naturales
 					</h3>
 				</a>
@@ -92,8 +94,9 @@ const title = 'Madagascar Salvaje'
 
 <style>
 	.title-responsive {
-		font-size: 1.2rem;
-		font-size: clamp(1.25rem, 0.6565rem + 3.0435vw, 3rem);
+		font-size: 1.75rem;
+		font-size: clamp(1.75rem, 1.2334rem + 2.2962vw, 3rem);
+		font-weight: 700;
 	}
 
 	.textShadow {
