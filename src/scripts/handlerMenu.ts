@@ -8,6 +8,10 @@ const backMenu = $('[back-menu]')
 
 /** Change the aria attributes and modify the menu button and show or hide the menu list */
 const changeMenuView = () => {
+	const width = window.innerWidth
+
+	if (width > 768) return
+
 	menuButton?.classList.toggle('collapse')
 	backMenu?.classList.toggle('invisible')
 	menu?.classList.toggle('menu_view')
@@ -24,5 +28,14 @@ document.addEventListener('click', (e) => {
 	const isHeaderOrMenu = target.closest('.headerPage') || target.closest('.menuButton')
 	const isCollapse = menuButton?.classList.contains('collapse')
 
-	if (!isHeaderOrMenu && isCollapse) changeMenuView()
+	if ((!isHeaderOrMenu && isCollapse) || target.closest('[back-menu]')) changeMenuView()
+})
+
+/** Modifies the aria attributes according to the new dimensions */
+window.addEventListener('resize', () => {
+	if (window.innerWidth >= 768) return
+
+	menuButton?.classList.remove('collapse')
+	backMenu?.classList.add('invisible')
+	menu?.classList.remove('menu_view')
 })
