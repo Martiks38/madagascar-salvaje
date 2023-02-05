@@ -1,0 +1,24 @@
+---
+import Layout from '@layouts/Layout.astro'
+
+const title = '404 | Madagascar Salvaje'
+const description = 'Error 404 not found'
+---
+
+<Layout title={title} description={description}>
+	<main class="grid place-content-center h-[calc(100vh_-_56px)]">
+		<articles class="flex flex-col-reverse gap-12 sm:flex-row overflow-hidden">
+			<img
+				src="/images/404.webp"
+				alt=""
+				width="250"
+				class="h-60 sm:block object-cover object-top rounded-lg"
+			/>
+			<div class="py-4 text-xl">
+				<h1 class="mb-8 font-bold text-4xl">Error 404</h1>
+				<p class="mb-2.5">Upps! Página no encontrada</p>
+				<a href="/" class="font-semibold underline">Ir al inicio</a>
+			</div>
+		</articles>
+	</main>
+</Layout>
