@@ -10,7 +10,7 @@ export const generateSuggestions = ({
 	path?: string
 	exclude?: string
 }): ISuggestionOption[] => {
-	const suggestions = data[section as keyof typeof data].map((el) => {
+	const suggestions = Array.from(data[section as keyof typeof data]).map((el) => {
 		const normalizeName = el.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 		let href = encodeURI(normalizeName)
 
