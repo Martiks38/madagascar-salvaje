@@ -5,14 +5,18 @@ let theme = window.localStorage.getItem('theme')
 let rotationIncreaseMoonSun = 0
 
 document.addEventListener('DOMContentLoaded', () => {
-	if (theme === 'light') return
+	if (theme === 'light') {
+		rotationIncreaseMoonSun++
+		increaseRotation(rotationIncreaseMoonSun, 180, '#button-theme')
+		return
+	}
 
 	if (!theme && window.matchMedia('(prefers-color-scheme: light)').matches) {
+		increaseRotation(rotationIncreaseMoonSun, 180, '#button-theme')
 		window.localStorage.setItem('theme', 'light')
 	}
 
 	if (theme === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
-		increaseRotation(rotationIncreaseMoonSun, 180, '#button-theme')
 		toggleTheme()
 
 		window.localStorage.setItem('theme', 'dark')
